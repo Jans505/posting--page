@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Simples</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Criar Novo Post</h1>
+      
+        <form id="formulario-post">
+            <div class="form-group">
+                <label for="titulo-input">Título do Post:</label>
+                <input type="text" id="titulo-input" placeholder="Digite um título..." required>
+            </div>
+
+            <div class="form-group">
+                <label for="conteudo-input">Conteúdo do Post:</label>
+                <textarea id="conteudo-input" rows="5" placeholder="O que você está pensando hoje?" required></textarea>
+            </div>
+
+            <button type="submit" id="btn-enviar">Postar</button>
+        </form>
+
+        <hr>
+
+        <section class="feed-section">
+            <h2>Último Post</h2>
+            
+            <article class="post-card">
+                <h3 id="renderizador-titulo">Título</h3>
+                <p id="renderizador-conteudo">Conteúdo do Post... Lorem ipsum dolor sit amet...</p>
+            </article>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
