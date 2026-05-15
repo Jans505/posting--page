@@ -43,4 +43,4 @@ formulario.addEventListener('submit', function(event) {
         console.error('Erro:', error);
         alert('Houve um problema ao enviar o seu post.');
     });
-});
+}); 
